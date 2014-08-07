@@ -468,7 +468,7 @@ class TwitterOAuth extends \tmhOAuth{
 			//write granted access tokens to session
 			\Session::set("twitter_access_token", $twitter_access_token);
 			//delete temproraly oauth tokens from session
-			\Session::delete("twitter_oauth");
+			//\Session::delete("twitter_oauth");
 			//refresh the page
 			\Response::redirect(\Uri::current());
 		} 
