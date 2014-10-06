@@ -157,14 +157,8 @@ class TwitterOAuth extends \tmhOAuth{
 				$params
 			);
 
-			// check response_code ? 200 OK
-			if ($response_code == 200)
-			{
-				//return all get response as object
-				return json_decode($this->response['response']);
-			}
-			// if there is an error
-			return null;
+			//return all get response as object
+			return json_decode($this->response['response']);
 		}
 	}
 
@@ -189,14 +183,8 @@ class TwitterOAuth extends \tmhOAuth{
 				$this->url($resource),
 				$params
 			);
-			// check response_code ? 200 OK
-			if ($response_code == 200)
-			{
-				//return all post response as object
-				return json_decode($this->response['response']);
-			}
-			// if there is an error
-			return null;
+ 			//return all post response as object
+			return json_decode($this->response['response']);
 		}
 	}
 
